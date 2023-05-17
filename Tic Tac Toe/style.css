@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap'); 
+
+*{
+    margin: 0; 
+    padding: 0; 
+    
+} 
+
+nav{
+    background-color: rgb(181, 61, 99); 
+    color: white;  
+    height: 61px; 
+    font-size: 150%; 
+    display: flex; 
+    align-items: center; 
+    padding: 0px 12px;  
+    font-weight: bold;
+    font-family:'Roboto', sans-serif;
+}
+nav ul{
+    list-style: none;  
+    color: black;  
+   
+
+} 
+.gamecontaineer{  
+   
+    display: flex; 
+    justify-content: center;  
+    margin-top:42px;
+} 
+h1 {
+    font-style: italic; 
+    font-family: 'Courier New', Courier, monospace; 
+    font-weight: bold; 
+    align-items:flex-start; 
+    display: flex; 
+    justify-content: flex-start;  
+    font-size: 2.5rem; 
+    color: mediumblue;
+}
+.containeer{
+display: grid; 
+grid-template-columns:repeat(3,10vw); 
+grid-template-rows: repeat(3,10vw);  
+font-family:'Roboto', sans-serif;  
+position: relative; 
+} 
+
+
+.box{ 
+    border: 2px solid black; 
+    font-size: 8vw; 
+    cursor: pointer;   
+    display: flex; 
+    justify-content: center;  
+    align-items: center;  
+    
+} 
+.box:hover{
+    background-color: rgb(224, 171, 209);
+} 
+.gameInfo{
+    padding: 0 34px;  
+    font-family: fantasy;  
+    
+   
+    
+} 
+.imagebox img{
+   width:0; 
+   transition: width 1s ease-in-out; 
+   
+
+} 
+
+.br0{
+    border-right: 0; 
+} 
+.bl0{
+    border-left: 0;
+} 
+.bt0{
+    border-top: 0;
+} 
+.bb0{
+    border-bottom: 0;
+}  
+#reset{
+    
+   margin:5px 10px; 
+   padding: 1px 13px; 
+   background-color: rgb(91, 174, 149); 
+   cursor: pointer ; 
+   font-size: 15px; 
+   font-weight: bold; 
+   border-radius: 10px; 
+} 
+.info{
+    font-size: 25px; 
+    font-style: oblique; 
+    font-weight: bold; 
+    font-family: 'Times New Roman', Times, serif; 
+    
+} 
+
+@media screen and (max-width:600px) 
+{
+   .gamecontaineer{
+    flex-wrap: wrap; 
+   } 
+   .gameInfo{
+    margin-top: 34px; 
+   } 
+   .gameInfo h1{
+    font-size: 1.8rem; 
+   } 
+   .containeer{
+    grid-template-columns:repeat(3,16vw); 
+    grid-template-rows:repeat(3,16vw);   
+   }
+}
